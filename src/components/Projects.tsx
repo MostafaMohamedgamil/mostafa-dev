@@ -1,11 +1,11 @@
-import React, { useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
-import { projects } from '../data/portfolio';
-import { ExternalLink, Github, Code } from 'lucide-react';
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import { projects } from "../data/portfolio";
+import { ExternalLink, Github, Code } from "lucide-react";
 
 const Projects: React.FC = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <section id="projects" className="py-20 bg-slate-900">
@@ -22,10 +22,10 @@ const Projects: React.FC = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-teal-500 to-blue-500 mx-auto mb-6"></div>
           <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-            Here are some of my recent projects that showcase my skills and creativity
+            Here are some of my recent projects that showcase my skills and
+            creativity
           </p>
         </motion.div>
-
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
@@ -47,11 +47,15 @@ const Projects: React.FC = () => {
                   <Code className="text-white" size={24} />
                 </div>
               </div>
-              
+
               <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-3">{project.title}</h3>
-                <p className="text-slate-300 mb-4 leading-relaxed">{project.description}</p>
-                
+                <h3 className="text-xl font-bold text-white mb-3">
+                  {project.title}
+                </h3>
+                <p className="text-slate-300 mb-4 leading-relaxed">
+                  {project.description}
+                </p>
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.stack.map((tech, techIndex) => (
                     <span
@@ -62,7 +66,7 @@ const Projects: React.FC = () => {
                     </span>
                   ))}
                 </div>
-                
+
                 <div className="flex space-x-4">
                   <motion.a
                     href={project.github}

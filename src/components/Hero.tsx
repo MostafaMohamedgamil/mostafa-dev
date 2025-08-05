@@ -1,17 +1,20 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowRight, Download, Github, Linkedin } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { ArrowRight, Download, Github, Linkedin } from "lucide-react";
 
 const Hero: React.FC = () => {
   const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
+    const contactSection = document.getElementById("contact");
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"
+    >
       {/* Background animated particles */}
       <div className="absolute inset-0">
         {[...Array(20)].map((_, i) => (
@@ -55,7 +58,7 @@ const Hero: React.FC = () => {
                 Mostafa Mohamed
               </motion.span>
             </h1>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -71,14 +74,15 @@ const Hero: React.FC = () => {
                 |
               </motion.span>
             </motion.div>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.3, duration: 0.8 }}
               className="text-lg text-slate-400 max-w-2xl mx-auto mb-8"
             >
-              I create beautiful, responsive, and user-focused web applications using modern technologies like React, Angular, and TypeScript.
+              I create beautiful, responsive, and user-focused web applications
+              using modern technologies like React, Angular, and TypeScript.
             </motion.p>
           </motion.div>
 
@@ -97,15 +101,17 @@ const Hero: React.FC = () => {
               <span>Let's Work Together</span>
               <ArrowRight size={20} />
             </motion.button>
-            
-            <motion.button
+
+            <motion.a
+              href="./utils/cv/Mostafa_Mohamed_Resume.pdf"
+              download="My-CV.pdf" // Optional: sets the filename when downloading
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="border-2 border-teal-500 text-teal-400 px-8 py-3 rounded-full font-semibold flex items-center space-x-2 hover:bg-teal-500 hover:text-white transition-all duration-200"
             >
               <Download size={20} />
               <span>Download CV</span>
-            </motion.button>
+            </motion.a>
           </motion.div>
 
           <motion.div
@@ -115,7 +121,7 @@ const Hero: React.FC = () => {
             className="flex justify-center space-x-6"
           >
             <motion.a
-              href="https://github.com/mostafa"
+              href="https://github.com/MostafaMohamedgamil"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, y: -5 }}
@@ -125,7 +131,7 @@ const Hero: React.FC = () => {
               <Github size={24} />
             </motion.a>
             <motion.a
-              href="https://linkedin.com/in/mostafa"
+              href="https://www.linkedin.com/in/mostafa-mohamed-351233221/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, y: -5 }}

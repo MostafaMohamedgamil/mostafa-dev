@@ -4,8 +4,8 @@ export interface Project {
   description: string;
   stack: string[];
   image: string;
-  github: string;
-  demo: string;
+  github?: string;
+  demo?: string;
 }
 
 export interface Experience {
@@ -15,6 +15,7 @@ export interface Experience {
   period: string;
   description: string;
   current?: boolean;
+  keyAchievements?: string[];
 }
 
 export interface Skill {
