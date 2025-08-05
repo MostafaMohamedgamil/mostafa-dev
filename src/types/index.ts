@@ -4,8 +4,8 @@ export interface Project {
   description: string;
   stack: string[];
   image: string;
-  github: string;
-  demo: string;
+  github?: string;
+  demo?: string;
 }
 
 export interface Experience {
