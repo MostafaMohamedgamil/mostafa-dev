@@ -10,9 +10,9 @@ const About: React.FC = () => {
 
   const stats = [
     { number: '2+', label: 'Years Experience' },
-    { number: '10+', label: 'Projects Completed' },
-    { number: '3', label: 'Technologies Mastered' },
-    { number: '2', label: 'Happy Clients' },
+    { number: '23+', label: 'Projects Completed' },
+    { number: '15+', label: 'Technologies Mastered' },
+    { number: '5+', label: 'Happy Clients' },
   ];
 
   return (

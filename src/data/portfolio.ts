@@ -67,9 +67,15 @@ export const skills: Skill[] = [
   { name: 'Bootstrap', category: 'Styling', level: 85 },
   { name: 'SCSS', category: 'Styling', level: 80 },
   { name: 'Tailwind CSS', category: 'Styling', level: 90 },
-  
+  { name: 'Material UI', category: 'Styling', level: 85 },
+
   // Tools
   { name: 'Git & GitHub', category: 'Tools', level: 85 },
+  { name: 'npm/pnpm/yarn', category: 'Tools', level: 90 },
+  { name: 'VS Code', category: 'Tools', level: 90 },
+  { name: 'Figma', category: 'Tools', level: 90 },
+  { name: 'Postman', category: 'Tools', level: 90 },
+
   
   // Concepts
   { name: 'SPA', category: 'Concepts', level: 90 },
